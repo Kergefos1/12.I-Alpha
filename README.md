@@ -1,2 +1,2 @@
-# 12.I-Alpha
+# Asztali repo
 AZ egyész éves mindenség:D!
