@@ -38,7 +38,10 @@ namespace Gym_Manager
 
         public int PricePerVisit()
         {
-            return 1;
+            if(Owner.Visits > 0)
+            return Convert.ToInt32(TotalCost() / Owner.Visits);
+            else
+                return TotalCost();
         }
         
 

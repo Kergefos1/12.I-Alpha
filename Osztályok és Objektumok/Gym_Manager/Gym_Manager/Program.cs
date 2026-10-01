@@ -14,3 +14,7 @@ Membership ship2 = new Membership(notstudent, 131685, 398);
 ship2.Extended(2);
 Console.WriteLine($"{ship.Owner.Name} {ship.Owner.Age} ");
 Console.WriteLine(ship2.Owner.Name);
+
+Gym gym = new Gym("almagym");
+
+Console.WriteLine($"{ship.Owner.Name}, {ship.PricePerVisit()}");
