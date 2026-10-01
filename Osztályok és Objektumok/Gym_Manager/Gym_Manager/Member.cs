@@ -24,5 +24,18 @@ namespace Gym_Manager
             _age = age;
             _isStudent = isstudent;
         }
+
+        public void CheckIn()
+        {
+            _visits++;
+        }
+        public string Describe()
+        {
+            if (IsStudent)
+                return ($" {Name}, {Age}, Diák");
+            else
+                return ($" {Name}, {Age}, Nem Diák");
+        }
+
     }
 }
