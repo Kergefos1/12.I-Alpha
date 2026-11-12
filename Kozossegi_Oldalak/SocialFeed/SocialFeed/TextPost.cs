@@ -13,7 +13,7 @@ namespace SocialFeed
         public string Text { get { return _text; } set { _text = value; } }
 
 
-        public TextPost(string author, string text) : base(author) { }
+        public TextPost(string author, string text) : base(author) { Text = text; }
 
 
         public override int Score()
