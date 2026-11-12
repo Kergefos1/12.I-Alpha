@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace SocialFeed
 {
-    public abstract class Post
+    public abstract class Post : IReportable
     {
         private string _auther;
         private int _likes;
+        private int _reports;
 
         public string Auther { get { return _auther; } set { _auther = value; } }
         public int Likes { get { return _likes; } }
 
+        
+        
 
         public Post(string auther)
         {
@@ -36,6 +39,14 @@ namespace SocialFeed
 
         public abstract int Score();
 
+        public void Reports()
+        {
+            _reports++;
+        }
+        public int ReportCount()
+        {
+            return _reports;
+        }
 
     }
 }
