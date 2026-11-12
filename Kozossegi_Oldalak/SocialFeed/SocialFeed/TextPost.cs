@@ -18,7 +18,7 @@ namespace SocialFeed
 
         public override int Score()
         {
-            return Likes * 2;
+            return Likes;
         }
 
         public override string GetDescribtion()
