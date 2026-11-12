@@ -36,5 +36,6 @@ namespace SocialFeed
 
         public abstract int Score();
 
+
     }
 }
